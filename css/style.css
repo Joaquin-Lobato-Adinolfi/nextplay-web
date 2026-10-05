@@ -9,6 +9,11 @@ body {
     color: #222;
 }
 
+body p{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
