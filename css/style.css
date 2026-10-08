@@ -80,15 +80,47 @@ header {
     display: block;
 }
 
+/* Navigation Styles */
+
 nav {
     display: flex;
     gap: 20px;
 }
 
 nav a {
-    color: black;
+    position: relative;
+
+    color: #132238;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    padding-bottom: 6px;
 }
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: currentColor;
+
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.25s ease;
+
+    border-radius: 2px;
+}
+
+nav a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Navigation Styles End */
 
 main {
     max-width: 1200px;
@@ -96,7 +128,7 @@ main {
 }
 
 section {
-    padding: 70px 30px;
+    padding: 40px 35px;
 }
 
 .hero {
@@ -141,13 +173,22 @@ section {
 }
 
 .primary-button {
-    background-color: #111;
+    background-color: #97c951;
+    color: #1E293B;
+}
+.primary-button:hover {
+    background-color: #1E293B;
     color: white;
 }
 
 .secondary-button {
-    border: 1px solid #111;
-    color: #111;
+    background-color: #1E293B;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #97c951;
+    color: #1E293B;
 }
 
 .products-section {
@@ -209,6 +250,8 @@ section {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-image {
@@ -226,6 +269,9 @@ section {
 
 .product-content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .product-category {
@@ -268,6 +314,7 @@ section {
 }
 
 /* Carousel Styles */
+
 .carousel-controls {
     display: flex;
     gap: 10px;
@@ -397,6 +444,7 @@ footer {
     padding: 30px;
     background-color: #97c951;
     color: black;
+    margin-top: 30px;
 }
 
 /* Contact Form Styles */
@@ -553,3 +601,39 @@ footer {
 }
 
 /* Contact Form Styles End */
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.product-actions .product-link:last-child {
+    text-align: right;
+}
+
+
+.product-actions a::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: currentColor;
+
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.25s ease;
+
+    border-radius: 2px;
+}
+
+.product-actions a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}

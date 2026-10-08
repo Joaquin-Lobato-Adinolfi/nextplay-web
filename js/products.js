@@ -3,37 +3,6 @@ const productCards = document.querySelectorAll(".product-card");
 const productList = document.querySelector("#product-list");
 
 
-filterButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        const selectedCategory = button.dataset.filter;
-
-        filterButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        productCards.forEach(card => {
-
-            const productCategory = card.dataset.category;
-
-            if (
-                selectedCategory === "all" ||
-                productCategory === selectedCategory
-            ) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-
-        });
-
-    });
-
-});
-
 const products = [
     {
         name: "Elo ET2294L",
@@ -88,6 +57,14 @@ const products = [
         description:
             "Stand para el terminal POS profesional WallabyPro, diseñado para aplicaciones comerciales y puntos de atención."
     }, 
+    {
+        name: "E-POS TP88E",
+        category: "printer",
+        categoryName: "Impresoras",
+        image: "assets/images/prodImages/EPOS_TP88E/front.png",
+        description:
+            "Impresora fiscal profesional diseñada para aplicaciones comerciales y puntos de atención."
+    }
 ];
 
 function renderProducts(productsToShow) {
@@ -116,10 +93,17 @@ function renderProducts(productsToShow) {
                         ${product.description}
                     </p>
 
-                    <a href="#contacto" class="product-link">
-                        Consultar producto
-                    </a>
+                    <div class="product-actions">
 
+                        <a href="contacto.html" class="product-link">
+                            Consultar precios
+                        </a>
+
+                        <a href="#productoInfo" class="product-link">
+                            Más información
+                        </a>
+
+                    </div>
                 </div>
 
             </article>

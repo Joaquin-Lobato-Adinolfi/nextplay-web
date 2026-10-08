@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Productos | Nextplay</title>
-
+    <link rel="icon" type="image/png" href="assets/images/misc/iconNextplay.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
+<header>
+
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <a href="tel:+541112345678" class="top-phone">
+                +54 11 1234-5678
+            </a>
+
+            <a href="#" class="social-link">
+                <img src="assets/images/misc/whatsapp.png" alt="WhatsApp">
+            </a>
+
+            <a href="#" class="social-link">
+                <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+
+    <div class="main-header">
 
         <a href="index.html" class="logo">
             <img src="assets/images/misc/logoNextplay.png" alt="Logo de Nextplay">
@@ -24,50 +42,55 @@
             <a href="contacto.html">Contacto</a>
         </nav>
 
-    </header>
+    </div>
 
+</header>
 
-    <main>
+<main>
 
-        <section class="products-section">
+    <section class="products-section">
 
-            <div class="section-header">
+        <div class="section-header">
 
-                <p class="section-label">
+            <p class="section-label">
                     Nuestro catálogo
-                </p>
+            </p>
                     
-                <h1>Productos</h1>
+            <h1>Productos</h1>
                 
-                <p>
-                    Conocé nuestras soluciones de hardware y equipamiento
-                    profesional para aplicaciones comerciales y empresariales.
-                </p>
+            <p>
+                Conocé nuestras soluciones de hardware y equipamiento
+                profesional para aplicaciones comerciales y empresariales.
+            </p>
 
-            </div>
+        </div>
 
-            <div class="product-filters">
+        <div class="product-filters">
 
-                <button class="filter-button active" data-filter="all">
+            <button class="filter-button active" data-filter="all">
                     Todos
-                </button>
+            </button>
 
-                <button class="filter-button" data-filter="touch">
+            <button class="filter-button" data-filter="touch">
                     Monitores Touch
-                </button>
+            </button>
 
-                <button class="filter-button" data-filter="pos">
+            <button class="filter-button" data-filter="pos">
                     POS
-                </button>
+            </button>
 
-            </div>
+            <button class="filter-button" data-filter="printer">
+                    Impresoras
+            </button>
 
-            <div class="product-grid" id="product-list">
-            </div>
+        </div>
 
-        </section>
+        <div class="product-grid" id="product-list">
+        </div>
 
-    </main>
+    </section>
+
+</main>
 
 
     <footer>
