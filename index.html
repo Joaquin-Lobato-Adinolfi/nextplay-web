@@ -13,16 +13,38 @@
 <body>
 
     <header>
-        <h1><a href="#inicio" class="logo">
-            <img src="assets/images/misc/logoNextplay.png" alt="Nextplay">
-        </a></h1>
+
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <a href="tel:+541112345678" class="top-phone">
+                +54 11 1234-5678
+            </a>
+
+            <a href="#" class="social-link">
+                <img src="assets/images/misc/whatsapp.png" alt="WhatsApp">
+            </a>
+
+            <a href="#" class="social-link">
+                <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+
+    <div class="main-header">
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/misc/logoNextplay.png" alt="Logo de Nextplay">
+        </a>
 
         <nav>
             <a href="index.html">Inicio</a>
             <a href="productos.html">Productos</a>
             <a href="contacto.html">Contacto</a>
         </nav>
-    </header>
+
+    </div>
+
+</header>
 
     <main>
 
@@ -35,7 +57,7 @@
                 </p>
 
                 <h1>
-                    Equipamiento de alta precisión para puntos de enta, comercios y gaming.
+                    Equipamiento de alta precisión para puntos de venta, comercios y gaming.
                 </h1>
 
                 <p class="hero-description">
@@ -60,34 +82,52 @@
 
 
         <!-- PRODUCTOS -->
-        <section id="productos" class="products-section">
+        <section class="featured-products">
 
-            <div class="section-header">
-                <p class="section-label">Nuestro catálogo</p>
-                <h2>Productos</h2>
+            <div class="featured-header">
+                <div>
+                    <p class="section-label">Productos destacados</p>
+                    <h2>Conocé nuestras soluciones</h2>
+                </div>
 
-                <p>
-                    Conocé nuestras soluciones de hardware y equipamiento profesional.
-                    Consultanos por disponibilidad y especificaciones.
-                </p>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" aria-label="Producto anterior">
+                        ←
+                    </button>
+
+                    <button id="carousel-next" aria-label="Producto siguiente">
+                        →
+                    </button>
+                </div>
             </div>
+
+            <div class="carousel-wrapper">
+                <div class="featured-track" id="featured-track">
+                </div>
+            </div>
+
+            <a href="productos.html" class="view-all-products">
+                Ver todos los productos →
+            </a>
 
         </section>
 
-
         <!-- SOBRE NEXTPLAY -->
         <section id="nosotros">
+            <div class="featured-header">
+                 <h2>Sobre Nextplay</h2>    
+            </div>
+           
 
-            <h2>Sobre Nextplay</h2>
-
-            <p>
+            <p class="index-paragraph">
                 En Next Play somos vendedores y distribuidores especializados en soluciones tecnológicas e insumos para la operación de comercios, puntos de venta y la industria del gaming, hace más de 15 años. 
             </p>
 
-            <p>
+            <p class="index-paragraph">
                 Nuestro diferencial principal radica en la provisión de monitores y pantallas táctiles Elo, marca líder global reconocida por su resistencia, respuesta táctil superior y rendimiento en entornos de uso intensivo.
             </p>
-            <p>Para ofrecer una solución integral de cobro y automatización, completamos nuestra oferta con aceptadores/validadores de billetes de alta precisión e impresoras térmicas EPOS. Ya sea para equipar un comercio, un punto de cobro o una sala de juegos y entretenimiento, en Next Play brindamos equipamiento oficial, stock permanente y asesoramiento técnico especializado para acompañar el crecimiento de tu proyecto.
+            <p class="index-paragraph">
+                Para ofrecer una solución integral de cobro y automatización, completamos nuestra oferta con aceptadores/validadores de billetes de alta precisión e impresoras térmicas EPOS. Ya sea para equipar un comercio, un punto de cobro o una sala de juegos y entretenimiento, en Next Play brindamos equipamiento oficial, stock permanente y asesoramiento técnico especializado para acompañar el crecimiento de tu proyecto.
             </p>
 
         </section>
@@ -95,13 +135,14 @@
 
         <!-- CONTACTO -->
         <section id="contacto">
-
-            <h2>Contacto</h2>
+            <div class="featured-header">            
+                <h2>Contacto</h2>
+            </div>
 
             <p class="hero-label">
                 ¿Necesitás equipar tu negocio o renovar tus puntos de venta?
             </p>
-            <p >
+            <p class="index-paragraph">
                 Consultanos por stock, modelos de monitores Elo o asesoramiento para la integración de hardware en tu proyecto.
             </p>
 
@@ -114,7 +155,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Nextplay</p>
+        <p>©Nextplay 2026</p>
     </footer>
 
      <script src="js/main.js"></script>

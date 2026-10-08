@@ -1,5 +1,7 @@
 const filterButtons = document.querySelectorAll(".filter-button");
 const productCards = document.querySelectorAll(".product-card");
+const productList = document.querySelector("#product-list");
+
 
 filterButtons.forEach(button => {
 
@@ -42,8 +44,6 @@ const products = [
             "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento."
     },
 
-    
-
     {
         name: "Monitor Táctil Elo ET1004L",
         category: "touch",
@@ -62,7 +62,8 @@ const products = [
             "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento."
     }, 
     
-    { name: "Elo ET2202L",
+    { 
+        name: "Elo ET2202L",
         category: "touch",
         categoryName: "Monitores Touch",
         image: "assets/images/prodImages/ET2202L/front.jpg",
@@ -79,7 +80,7 @@ const products = [
             "Terminal POS profesional diseñada para aplicaciones comerciales y puntos de atención.(Stand no incluido)"
     },
 
-     {
+    {
         name: "WallabyPro E989512 - Stand",
         category: "pos",
         categoryName: "POS",
@@ -88,8 +89,6 @@ const products = [
             "Stand para el terminal POS profesional WallabyPro, diseñado para aplicaciones comerciales y puntos de atención."
     }, 
 ];
-
-const productList = document.querySelector("#product-list");
 
 function renderProducts(productsToShow) {
 
@@ -129,8 +128,6 @@ function renderProducts(productsToShow) {
     }).join("");
 
 }
-
-
 
 filterButtons.forEach(button => {
 
