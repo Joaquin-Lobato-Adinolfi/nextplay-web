@@ -1,7 +1,8 @@
 const filterButtons = document.querySelectorAll(".filter-button");
 const productCards = document.querySelectorAll(".product-card");
 const productList = document.querySelector("#product-list");
-
+const urlParams = new URLSearchParams(window.location.search);
+const categoryFromUrl = urlParams.get("category");
 
 const products = [
     {
@@ -59,7 +60,7 @@ const products = [
     }, 
     {
         name: "E-POS TP88E",
-        category: "printer",
+        category: "printers",
         categoryName: "Impresoras",
         image: "assets/images/prodImages/EPOS_TP88E/front.png",
         description:
@@ -144,3 +145,30 @@ filterButtons.forEach(button => {
 });
 
 renderProducts(products);
+
+function applyFilter(category) {
+
+    const productsToShow =
+        category === "all"
+            ? products
+            : products.filter(product =>
+                product.category === category
+            );
+
+    renderProducts(productsToShow);
+
+    filterButtons.forEach(button => {
+        button.classList.toggle(
+            "active",
+            button.dataset.filter === category
+        );
+    });
+}
+
+
+
+if (categoryFromUrl) {
+    applyFilter(categoryFromUrl);
+} else {
+    applyFilter("all");
+}
