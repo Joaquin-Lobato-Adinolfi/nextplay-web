@@ -7,7 +7,7 @@ const featuredProducts = [
     {
         name: "Elo ET2294L",
         categoryName: "Monitor Touch",
-        image: "assets/images/prodImages/ET2294L Nuevo/front.png",
+        image: "assets/images/prodImages/ET2294L/front.png",
         description: "Monitor táctil profesional para aplicaciones comerciales."
     },
 

@@ -1,72 +1,8 @@
 const filterButtons = document.querySelectorAll(".filter-button");
-const productCards = document.querySelectorAll(".product-card");
 const productList = document.querySelector("#product-list");
+
 const urlParams = new URLSearchParams(window.location.search);
-const categoryFromUrl = urlParams.get("category");
-
-const products = [
-    {
-        name: "Elo ET2294L",
-        category: "touch",
-        categoryName: "Monitores Touch",
-        image: "assets/images/prodImages/ET2294L Nuevo/front.png",
-        description:
-            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento."
-    },
-
-    {
-        name: "Monitor Táctil Elo ET1004L",
-        category: "touch",
-        categoryName: "Monitores Touch",
-        image: "assets/images/prodImages/ET1004L/front.png",
-        description:
-            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento."
-    },  
-
-    {
-        name: "Elo ET1509L",
-        category: "touch",
-        categoryName: "Monitores Touch",
-        image: "assets/images/prodImages/ET1509L/front.png",
-        description:
-            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento."
-    }, 
-    
-    { 
-        name: "Elo ET2202L",
-        category: "touch",
-        categoryName: "Monitores Touch",
-        image: "assets/images/prodImages/ET2202L/front.jpg",
-        description:
-            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento."
-    },
-
-    {
-        name: "WallabyPro E989314",
-        category: "pos",
-        categoryName: "POS",
-        image: "assets/images/prodImages/E989314 WallabyPro/front.jpg",
-        description:
-            "Terminal POS profesional diseñada para aplicaciones comerciales y puntos de atención.(Stand no incluido)"
-    },
-
-    {
-        name: "WallabyPro E989512 - Stand",
-        category: "pos",
-        categoryName: "POS",
-        image: "assets/images/prodImages/E989512 Wallaby Stand/standWallaby.jpg",
-        description:
-            "Stand para el terminal POS profesional WallabyPro, diseñado para aplicaciones comerciales y puntos de atención."
-    }, 
-    {
-        name: "E-POS TP88E",
-        category: "printers",
-        categoryName: "Impresoras",
-        image: "assets/images/prodImages/EPOS_TP88E/front.png",
-        description:
-            "Impresora fiscal profesional diseñada para aplicaciones comerciales y puntos de atención."
-    }
-];
+const categoryFromUrl = urlParams.get("category") || "all";
 
 function renderProducts(productsToShow) {
 
@@ -100,7 +36,7 @@ function renderProducts(productsToShow) {
                             Consultar precios
                         </a>
 
-                        <a href="#productoInfo" class="product-link">
+                        <a href="informacion-producto.html?id=${product.id}" class="product-link">
                             Más información
                         </a>
 
@@ -144,7 +80,6 @@ filterButtons.forEach(button => {
 
 });
 
-renderProducts(products);
 
 function applyFilter(category) {
 
@@ -166,9 +101,5 @@ function applyFilter(category) {
 }
 
 
+applyFilter(categoryFromUrl);
 
-if (categoryFromUrl) {
-    applyFilter(categoryFromUrl);
-} else {
-    applyFilter("all");
-}
