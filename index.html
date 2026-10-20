@@ -93,9 +93,10 @@
 
     <main>
 
-        <!-- HERO / INICIO -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
+        <!-- HERO / INICIO / DESTACADOS-->
+        <div class="hero-layout">
+            <section id="inicio" class="hero">
+                <div class="hero-content">
 
                 <h1>
                     Tecnologia que conecta tu negocio
@@ -118,42 +119,37 @@
 
                 </div>
 
-            </div>
+                </div>
+            </section>
+
+            <section class="featured-products">
+
+                    <div class="featured-header">
+                        <div>
+                            <h2>Productos destacados</h2>
+                        </div>
+                    </div>
+                    
+                <div class="carousel-container">
+                    <div class="carousel-controls">
+                        <button id="carousel-prev" aria-label="Producto anterior">
+                            ←
+                        </button>
+
+                        <button id="carousel-next" aria-label="Producto siguiente">
+                            →
+                        </button>
+                    </div>
+
+                    <div class="carousel-wrapper">
+                        <div class="featured-track" id="featured-track">
+                        </div>
+                    </div>
+                </div>
             
+            </section>
 
-        </section>
-
-
-        <!-- PRODUCTOS -->
-        <section class="featured-products">
-
-            <div class="featured-header">
-                <div>
-                    <p class="section-label">Productos destacados</p>
-                    <h2>Conocé nuestras soluciones</h2>
-                </div>
-
-                <div class="carousel-controls">
-                    <button id="carousel-prev" aria-label="Producto anterior">
-                        ←
-                    </button>
-
-                    <button id="carousel-next" aria-label="Producto siguiente">
-                        →
-                    </button>
-                </div>
-            </div>
-
-            <div class="carousel-wrapper">
-                <div class="featured-track" id="featured-track">
-                </div>
-            </div>
-       
-            <a href="productos.html" class="view-all-products">
-            Ver todos los productos →
-            </a>
-
-        </section>
+        </div>
 
         <!-- SOBRE NEXTPLAY -->
         <section id="nosotros">

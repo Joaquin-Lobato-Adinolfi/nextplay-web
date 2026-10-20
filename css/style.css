@@ -9,6 +9,20 @@ body {
     color: #222;
 }
 
+main {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section {
+    padding: 40px 35px;
+}
+
 body p{
     line-height: 1.6;
     font-size: 16px;
@@ -164,29 +178,45 @@ nav a:hover::after {
 
 /* Navigation Styles End */
 
-main {
-    max-width: 1200px;
-    margin: auto;
-}
 
-section {
-    padding: 40px 35px;
+
+
+section #nosotros #contacto  {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .hero {
-    min-height: 550px;
-    display: flex;
-    align-items: center;
+    min-height: auto;
+    padding: 0px;
+    align-items: flex-start;
+}
+
+.hero-layout {
+    width: 100%;
+
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+
+    align-items: start;
 }
 
 .hero-content {
     max-width: 750px;
 }
 
-
 .hero h1 {
     font-size: 56px;
-    margin: 15px 0;
+    margin-top: 0;
 }
 
 .hero-description {
@@ -213,6 +243,7 @@ section {
     background-color: #97c951;
     color: #1E293B;
 }
+
 .primary-button:hover {
     background-color: #1E293B;
     color: white;
@@ -253,7 +284,7 @@ section {
     background-color: #97c951;
     color: #1E293B;
 
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
 
     cursor: pointer;
@@ -262,7 +293,7 @@ section {
         background-color 0.2s ease,
         transform 0.2s ease;
 
-    min-width: 120px;
+    min-width: 150px;
     
 }
 
@@ -359,44 +390,84 @@ section {
 /* Product Grid Styles End */
 
 .featured-products {
-    padding: 80px 30px;
+    position: relative;
+    padding: 0;
+    min-width: 0;
 }
 
 .featured-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .featured-header h2 {
     font-size: 40px;
-    margin: 10px 0 0;
+    line-height: 1.1;
+    margin: 0;
+    margin-top: 0;
 }
 
 /* Carousel Styles */
 
+.carousel-container {
+    position: relative;
+}
+
 .carousel-controls {
+    position: absolute;
+
+    top: 205px;
+    left: 0;
+
+    width: 100%;
+
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+
+    z-index: 20;
 }
 
 .carousel-controls button {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: 1px solid #ccc;
     border-radius: 50%;
 
     background-color: white;
+    color: #1E293B;
 
     font-size: 20px;
+
     cursor: pointer;
+
+    pointer-events: auto;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
+.carousel-controls button:first-child {
+    transform: translateX(-60px);
+}
+
+.carousel-controls button:last-child {
+    transform: translateX(60px);
+}
+
+
 .carousel-controls button:hover {
-    background-color: #111;
-    color: white;
+    background-color: #97C951;
 }
 
 .carousel-wrapper {
@@ -418,18 +489,10 @@ section {
 }
 
 .featured-track .product-card {
-    flex: 0 0 calc((100% - 60px) / 3);
+    flex: 0 0 100%;
     scroll-snap-align: start;
 }
 
-.view-all-products {
-    display: inline-block;
-    margin-top: 30px;
-
-    color: #111;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 @media (max-width: 900px) {
     .featured-track .product-card {
@@ -930,4 +993,15 @@ footer {
     gap: 15px;
 
     margin-top: 35px;
+}
+
+#nosotros, #contacto {
+    width: 100%;
+    padding: 40px 0 60px;
+}
+
+.products-hero-description {
+    max-width: 1500px;
+    padding-bottom: 20px;
+    margin-top: 0;
 }

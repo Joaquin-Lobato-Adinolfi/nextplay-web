@@ -1,6 +1,7 @@
 const products = [
 
-    {   
+     /* GENERIC
+     {   
         id: "ET2294L",
         
         name: "Elo ET2294L",
@@ -23,12 +24,13 @@ const products = [
             "Resolución Full HD (1920 x 1080)",
             "Tecnología táctil capacitiva proyectada (PCAP)"
         ]
-    },
+    }, 
+    */
 
     {
         id: "ET1004L",
         
-        name: "Monitor Táctil Elo ET1004L",
+        name: "Elo ET1004L",
         
         category: "touch",
         categoryName: "Monitores Touch",
@@ -74,7 +76,57 @@ const products = [
             "Tecnología táctil capacitiva proyectada (PCAP)"
         ]
     }, 
-    
+
+    {   
+        id: "ET1790L",
+        
+        name: "Elo ET1790L",
+        
+        category: "touch",
+        categoryName: "Monitores Touch",
+        
+        image: "assets/images/prodImages/ET1790L/front.png",
+        images: [
+            "assets/images/prodImages/ET1790L/front.png",
+            "assets/images/prodImages/ET1790L/back.png",
+            "assets/images/prodImages/ET1790L/3fourths.png",
+            "assets/images/prodImages/ET1790L/side.png"
+        ],
+
+        description:
+            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento.",
+        features: [
+            "Pantalla táctil de 22 pulgadas",
+            "Resolución Full HD (1920 x 1080)",
+            "Tecnología táctil capacitiva proyectada (PCAP)"
+        ]
+    }, 
+
+    {   
+        id: "ET2094L",
+        
+        name: "Elo ET2094L",
+        
+        category: "touch",
+        categoryName: "Monitores Touch",
+        
+        image: "assets/images/prodImages/ET2094L/front.png",
+        images: [
+            "assets/images/prodImages/ET2094L/front.png",
+            "assets/images/prodImages/ET2094L/back.png",
+            "assets/images/prodImages/ET2094L/3fourths.png",
+            "assets/images/prodImages/ET2094L/side.png"
+        ],
+
+        description:
+            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento.",
+        features: [
+            "Pantalla táctil de 22 pulgadas",
+            "Resolución Full HD (1920 x 1080)",
+            "Tecnología táctil capacitiva proyectada (PCAP)"
+        ]
+    }, 
+
     { 
         id: "ET2202L",
         
@@ -98,6 +150,103 @@ const products = [
             "Tecnología táctil capacitiva proyectada (PCAP)"
         ]
     },
+
+    {   
+        id: "ET2294L",
+        
+        name: "Elo ET2294L",
+        
+        category: "touch",
+        categoryName: "Monitores Touch",
+        
+        image: "assets/images/prodImages/ET2294L/front.png",
+        images: [
+            "assets/images/prodImages/ET2294L/front.png",
+            "assets/images/prodImages/ET2294L/back.png",
+            "assets/images/prodImages/ET2294L/3fourths.png",
+            "assets/images/prodImages/ET2294L/side.png"
+        ],
+
+        description:
+            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento.",
+        features: [
+            "Pantalla táctil de 22 pulgadas",
+            "Resolución Full HD (1920 x 1080)",
+            "Tecnología táctil capacitiva proyectada (PCAP)"
+        ]
+    },
+
+    {   
+        id: "ET2702L",
+        
+        name: "Elo ET2702L",
+        
+        category: "touch",
+        categoryName: "Monitores Touch",
+        
+        image: "assets/images/prodImages/ET2702L/front.png",
+        images: [
+            "assets/images/prodImages/ET2702L/front.png",
+            "assets/images/prodImages/ET2702L/back.png",
+            "assets/images/prodImages/ET2702L/3fourths.png",
+        ],
+
+        description:
+            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento.",
+        features: [
+            "Pantalla táctil de 22 pulgadas",
+            "Resolución Full HD (1920 x 1080)",
+            "Tecnología táctil capacitiva proyectada (PCAP)"
+        ]
+    }, 
+
+    {   
+        id: "Series5_10",
+        
+        name: 'Elo I-Series 5 - 10"',
+        
+        category: "touch",
+        categoryName: "Monitores Touch",
+        
+        image: "assets/images/prodImages/I-Series_5_10p/front.jpg",
+        images: [
+            "assets/images/prodImages/I-Series_5_10p/front.jpg",
+            "assets/images/prodImages/I-Series_5_10p/back.jpg",
+            "assets/images/prodImages/I-Series_5_10p/3fourths.jpg",
+        ],
+
+        description:
+            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento.",
+        features: [
+            "Pantalla táctil de 22 pulgadas",
+            "Resolución Full HD (1920 x 1080)",
+            "Tecnología táctil capacitiva proyectada (PCAP)"
+        ]
+    }, 
+
+    {   
+        id: "Series5_22",
+        
+        name: 'Elo I-Series 5 - 22"',
+        
+        category: "touch",
+        categoryName: "Monitores Touch",
+        
+        image: "assets/images/prodImages/I-Series_5_22p/front.jpg",
+        images: [
+            "assets/images/prodImages/I-Series_5_22p/front.jpg",
+            "assets/images/prodImages/I-Series_5_22p/back.jpg",
+            "assets/images/prodImages/I-Series_5_22p/3fourths.jpg",
+        ],
+
+        description:
+            "Monitor táctil profesional diseñado para integraciones comerciales, industriales y de entretenimiento.",
+        features: [
+            "Pantalla táctil de 22 pulgadas",
+            "Resolución Full HD (1920 x 1080)",
+            "Tecnología táctil capacitiva proyectada (PCAP)"
+        ]
+    }, 
 
     {
         id: "WaProE989314",
@@ -167,6 +316,6 @@ const products = [
             "Impresión térmica de alta velocidad",
             "Conectividad versátil: USB, Ethernet y Bluetooth"
         ]
-    }
-    
+    }, 
+
 ];
